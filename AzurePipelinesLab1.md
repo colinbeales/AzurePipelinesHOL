@@ -32,4 +32,4 @@ Now your project is created it has an empty git repository ready for use from Az
 
 <img src="images/Lab1_6.png" width="424"/>
   
-[<- Lab: Overview](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab1.md) | [Lab 2: Create a continuous integration build ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab2.md)
+[<- Lab: Overview](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/README.md) | [Lab 2: Create a continuous integration build ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab2.md)
