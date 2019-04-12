@@ -1,4 +1,4 @@
-# Lab 1: Creating the project
+# Lab 1: Creating Azure DevOps project
 
 ## Task 1: Create the Azure DevOps Team Project
 
@@ -20,7 +20,7 @@
 
 Now your project is created it has an empty git repository ready for use from Azure Repos. We will need to put some code into this Repo when we setup our pipelines so lets get the code in place first. Note: Azure Pipelines can get code from other source code repositories like GitHub, Bitbucket etc.. however in this lab we will use the Azure Repos service build into Azure DevOps.
 
-1. Head to Azure Repos using the menus on the left hand side.
+1. Head to Azure Repos using the menus on the left hand side. By default it should select the first sub-menu for files which is what we want.
    
 <img src="images/Lab1_4.png" width="624"/>
 
@@ -32,3 +32,4 @@ Now your project is created it has an empty git repository ready for use from Az
 
 <img src="images/Lab1_6.png" width="424"/>
   
+[<- Lab: Overview](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab1.md) | [Lab 2: Create a continuous integration build ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab2.md)
