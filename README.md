@@ -12,11 +12,17 @@ This set of labs will step through the key elements in setting up and using a bu
 
 # Overall flow
 
+Setting up a basic pipeline (build-release)
 - [Lab 1: Create your Azure DevOps project](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab1.md)
 - [Lab 2: Create a continuous integration build](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab2.md)
 - [Lab 3: Create a release pipeline](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab3.md)
 - [Lab 4: Add additional stages](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab4.md)
 - [Lab 5: Add approvals](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab5.md)
+
+Setting up a pipeline working with containers
+- [Lab 6: Create a continuous integration build for a docker container](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab6.md)
+- [Lab 7: Create a release pipeline to run a container](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab7.md)
+
 
 Azure DevOps supports any app and doesn't require the use of Visual Studio, .NET or other Microsoft languages or platforms. [Labs that work through implementing DevOps with Node, Java, Eclipse, IntelliJ, Docker and more are available here](https://www.azuredevopslabs.com/).
 
