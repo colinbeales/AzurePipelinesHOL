@@ -1,4 +1,4 @@
-# Lab 2:Creating a continuous integration (CI) build pipeline
+# Lab 2: Creating a continuous integration (CI) build pipeline
 
 ## Task 1: Create the build pipeline
 
