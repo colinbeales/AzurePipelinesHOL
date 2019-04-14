@@ -68,27 +68,29 @@ The Save dialog can have a comment for history, but we'll just sekect "OK" so th
 
 <img src="images/Lab3_16.png" width="424"/>
 
-13. Let's kick off a new release by selecting "Create release" from the "Release" dropdown.
+## Task 2: Execute a release on using the new release pipeline
+
+1. Let's kick off a new release by selecting "Create release" from the "Release" dropdown.
   
 <img src="images/Lab3_17.png" width="624"/>
 
-14. The Create a new release screen gives a chance to confirm which artifacts will be released, we only have our one build artifacts so we can leave everything as is and click "Create"
+2. The Create a new release screen gives a chance to confirm which artifacts will be released, we only have our one build artifacts so we can leave everything as is and click "Create"
     
 <img src="images/Lab3_18.png" width="624"/>
 
-15. As we saw with our build we can click the link at the top of the screen to see the progress of our release. Click "Release 1" at the top to see this.
+3. As we saw with our build we can click the link at the top of the screen to see the progress of our release. Click "Release 1" at the top to see this.
     
 <img src="images/Lab3_19.png" width="624"/>
 
-16. If you catch the release in-progress you can click the "In-progress" link to see each step in your pipeline executing in real time. If the release is completed the "In-progress" link is replaced with a "Completed" link that you can click.
+4. If you catch the release in-progress you can click the "In-progress" link to see each step in your pipeline executing in real time. If the release is completed the "In-progress" link is replaced with a "Completed" link that you can click.
         
 <img src="images/Lab3_20.png" width="624"/>
 
-17.  Depending on how quickly you clicked through you will either see the steps executing or see all the steps completed meaning our deployment has been successful creating a App Service in a "Dev" environement and deploying our build to this service.
+5.  Depending on how quickly you clicked through you will either see the steps executing or see all the steps completed meaning our deployment has been successful creating a App Service in a "Dev" environement and deploying our build to this service.
     
 <img src="images/Lab3_21.png" width="624"/>
 
 Next we will look to add to this release by adding additional release stages for our QA and production environments.
 
 [<- Lab 2: Create a continuous integration build](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab2.md) | 
-[Lab 4: Add additional release stages](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab4.md)
+[Lab 4: Add additional release stages ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab4.md)
