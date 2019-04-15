@@ -25,5 +25,4 @@ Not done yet
 
 
 
-  
- [<- Lab 4: Add additional stages](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab4.md) | [Lab 6: Create a CI build for a docker container ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab6.md)
+[<- Lab 5: Add approvals](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab5.md) | [(Advanced) Lab 7: Create a release pipeline to run a container ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab7.md)
