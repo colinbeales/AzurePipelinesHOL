@@ -90,18 +90,29 @@ When we deployed our release pipeline from the last lab it deployed to each envi
 12. Our approval is now done, so lets exit from the post-deployment approvals dialog.
     
 <img src="images/Lab5_21.png" width="624"/>
+
+13. With the approval done our pipeline should be now executing the QA stage of our pipeline. Lets go check on this by selecting "Release 3" from the breadcrumb menu at the top.
+    
 <img src="images/Lab5_22.png" width="624"/>
+
+14. If you got to this point whilst the deployment is still occuring the QA stage will be "In progress" keep refreshing this screen until QA shows as "Suceeded". The "Refresh" button can be found in the toolbar above the visual canvas.
+    
 <img src="images/Lab5_23.png" width="624"/>
+
+15. Once QA has succeeded we should see a screen like the one below. This screen is another which allows you to see an approval is needed. This time its the pre-deployment approval for production which needs signing off before a production deploy will take place. To do this Click "Approve" under the box for the production stage.
+
 <img src="images/Lab5_24.png" width="624"/>
+
+16. Once again for our approval we don't need and audited comment so lets just click "Approve". Note: Pre-deployment conditions enable you to select "Defer deploying for later" this is useful for scenarios where you want to sign-off at this point but have the deployment actually take place later. An example of this might be signing off a production release on a Friday afternoon and deferring the deployment to trigger at a listed time at the weekend. We don't need to do this today as we want our deployment to immediately take place.
+    
 <img src="images/Lab5_25.png" width="624"/>
+
+17. Again close the approvals dialog bu selecting the "X" button.
+    
 <img src="images/Lab5_26.png" width="624"/>
+
+19. Production should now be deploying or deployed. When you see that all three stages have succeeded you have completed this part of the lab and have setup a build and release pipeline. You now have the skills to try other types of build/deployments with Azure Pipelines. 
+    
 <img src="images/Lab5_27.png" width="624"/>
-<img src="images/Lab5_28.png" width="624"/>
 
-
-
-## Task 2: Execute a release on using the new release pipeline
-
-1. Let's kick off a new release on our pipeline by selecting "Create release" from the "Release" dropdown.
-  
- [<- Lab 4: Add additional stages](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab4.md) | [Lab 6: Create a CI build for a docker container ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab6.md)
+[<- Lab 4: Add additional stages](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab4.md) | [(Advanced) Lab 6: Create a CI build for a docker container ->](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab6.md)
