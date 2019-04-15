@@ -20,8 +20,11 @@ Setting up a basic pipeline (build-release)
 - [Lab 5: Add approvals](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab5.md)
 
 Setting up a pipeline working with containers
-- [Lab 6: Create a continuous integration build for a docker container](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab6.md)
-- [Lab 7: Create a release pipeline to run a container](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab7.md)
+- [(Advanced) Lab 6: Create a continuous integration build for a docker container](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab6.md)
+- [(Advanced) Lab 7: Create a release pipeline to run a container](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab7.md)
+
+Homework
+- [(Optional) Hack: Ideas for other pipeline work to extend workshop learning](https://github.com/colinbeales/AzurePipelinesHOL/blob/master/AzurePipelinesLab8.md)
 
 
 Azure DevOps supports any app and doesn't require the use of Visual Studio, .NET or other Microsoft languages or platforms. [Labs that work through implementing DevOps with Node, Java, Eclipse, IntelliJ, Docker and more are available here](https://www.azuredevopslabs.com/).
