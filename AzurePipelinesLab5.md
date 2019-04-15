@@ -111,7 +111,7 @@ When we deployed our release pipeline from the last lab it deployed to each envi
     
 <img src="images/Lab5_26.png" width="624"/>
 
-19. Production should now be deploying or deployed. When you see that all three stages have succeeded you have completed this part of the lab and have setup a build and release pipeline. You now have the skills to try other types of build/deployments with Azure Pipelines. 
+18. Production should now be deploying or deployed. When you see that all three stages have succeeded you have completed this part of the lab and have setup a build and release pipeline. You now have the skills to try other types of build/deployments with Azure Pipelines. 
     
 <img src="images/Lab5_27.png" width="624"/>
 
