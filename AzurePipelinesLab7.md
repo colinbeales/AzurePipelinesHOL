@@ -107,7 +107,7 @@ Once this data has been entered click the "Save" button to initiate a final save
    
 <img src="images/Lab7_15.png" width="624"/>
 
-5. With the logs showing success you have now completed the container lab. Feel free to have a go at some of the freeform hack suggestions in the next section.  
+5. With the logs showing success you have now completed the container lab. You can head to your Azure subscription and look at the deployed resources in the resource group. DOn't forget to clean-up and delete them after the lab if they are no longer useful, after all you have a pipeline that can recreate them at any time in Azure Pipelines. If you fancy a further challenge feel free to have a go at some of the freeform hack suggestions in the next section.  
    
 <img src="images/Lab7_16.png" width="624"/>
 
