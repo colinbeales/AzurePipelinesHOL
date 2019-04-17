@@ -58,9 +58,10 @@ Our release so far has only one stage, representing a deployment to one environm
 <img src="images/Lab4_13.png" width="624"/>
 
 4. We should be able to watch progress as our deployment takes place over Dev, QA and Production stages one by one. Note: Remember you could click "succeded" or "In-progress" on any stage to further drill into the logs being produced for each stage as the agent job executed our release.
+   
 <img src="images/Lab4_14.png" width="624"/>
 
-1. We're pretty much done for this lab. If you load up your Azure usbcription in https://portal.azure.com you will see you have a new resource group created and within this are each of our App Services, one per environement. Note: App Service has a feature called slots that you would probably use in a non-lab environment which would mean you'd have one App Service with multiple slots on it, rather than what we created today. However we're done for this lab, our next one will add some approvals to the pipeline so we can sign-off each environement rather than just deploying all the way to production without a pause.
+5. We're pretty much done for this lab. If you load up your Azure susbcription in https://portal.azure.com you will see you have a new resource group created and within this are each of our App Services, one per environement. Note: App Service has a feature called slots that you would probably use in a non-lab environment which would mean you'd have one App Service with multiple slots on it, rather than what we created today. However we're done for this lab, our next one will add some approvals to the pipeline so we can sign-off each environement rather than just deploying all the way to production without a pause.
     
 <img src="images/Lab4_15.png" width="624"/>
 
