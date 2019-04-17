@@ -9,7 +9,7 @@ Azure has many choices to host an container such as AKS, a managed Kubernetes se
 
 <img src="images/Lab7_1.png" width="624"/>
 
-2. Pressing the "Release" button from a build gives the release creation process some context that it knows our intent is to create a release from the artifacts of that build pipeline. Take a look at the screen presented to you and you'll see that automatically this pipeline has been configured to do continuous deployment from the build artifact that we just created. This saves a few steps we had to complete back in Lab???? where we had to setup this artifact ourselves. 
+2. Pressing the "Release" button from a build gives the release creation process some context that it knows our intent is to create a release from the artifacts of that build pipeline. Take a look at the screen presented to you and you'll see that automatically this pipeline has been configured to do continuous deployment from the build artifact that we just created. This saves a few steps we had to complete back in Lab 3 where we had to setup this artifact ourselves. 
    
    This means we now simply have to pick a good template for our Stage to scaffold out task(s) we can use in our release. As we want to host our container with Azure App Service (albeit a different one from our last lab) select "Apply" on the "Azure App Service deployment" template in the list.
    
@@ -33,11 +33,11 @@ The registryName value needs to be the same name you used in the last lab that w
 <img src="images/Lab7_4.png" width="624"/>
 
 5. With our variables set we can click back to the "Tasks" tab. At the stage level selected by defaults there are some parameters to fill in for the entire pipeline. These values are:
-   * Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
-   * App type - "Web App for Containers (Linux)" 
-   * App service name - "\$(webAppName)" the name from our variables for our Web App.
-   * Registry or Namespace - "\$(registryName).azurecr.io" can be added here as it can use our registry name variable to make up the registry url.
-    * Repository - "\$(imageName) can be used here.
+* Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
+* App type - "Web App for Containers (Linux)" 
+* App service name - "\$(webAppName)" the name from our variables for our Web App.
+* Registry or Namespace - "\$(registryName).azurecr.io" can be added here as it can use our registry name variable to make up the registry url.
+* Repository - "\$(imageName) can be used here.
 
 <img src="images/Lab7_5.png" width="624"/>
 
@@ -50,12 +50,12 @@ The registryName value needs to be the same name you used in the last lab that w
 <img src="images/Lab7_7.png" width="624"/>
 
 8. That's all our new tasks added so lets go configure the ones in the pipeline. First click the "Azure Resource Group Deployment" task you added at the start. This task will be used to Create our Azure App Service configured for Web App for COntainers that we need to host our container. With this selected you can change the desired fields which are:
-    * Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
-    * Resource Group - Use our variable "\$(resourceGroup)"
-    * Location - "North Europe". to support "Azure Web App for Containers" 
-    * Template - Use the "..." to find the file "WebAppForContainers.json" which should be in our drop artifact.
-    * Template parameters - Use the "..." to find the file "WebAppForContainers.parameters.json" which again will be in drop artifact.
-    * Override parameters - Use the "..." elispses to bring up the parameter override dialog and enter "\$(webAppName)" as the value for the website name and "\$(iamgeName)" as the value for the container image name.
+ * Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
+ * Resource Group - Use our variable "\$(resourceGroup)"
+ * Location - "North Europe". to support "Azure Web App for Containers" 
+ * Template - Use the "..." to find the file "WebAppForContainers.json" which should be in our drop artifact.
+ * Template parameters - Use the "..." to find the file "WebAppForContainers.parameters.json" which again will be in drop artifact.
+ * Override parameters - Use the "..." elispses to bring up the parameter override dialog and enter "\$(webAppName)" as the value for the website name and "\$(iamgeName)" as the value for the container image name.
 
 <img src="images/Lab7_8.png" width="624"/>
 
@@ -107,7 +107,7 @@ Once this data has been entered click the "Save" button to initiate a final save
    
 <img src="images/Lab7_15.png" width="624"/>
 
-5. With the logs showing success you have now completed the container lab. You can head to your Azure subscription and look at the deployed resources in the resource group. DOn't forget to clean-up and delete them after the lab if they are no longer useful, after all you have a pipeline that can recreate them at any time in Azure Pipelines. If you fancy a further challenge feel free to have a go at some of the freeform hack suggestions in the next section.  
+5. With the logs showing success you have now completed the container lab. You can head to your Azure subscription and look at the deployed resources in the resource group. Don't forget to clean-up and delete them after the lab if they are no longer useful, after all you have a pipeline that can recreate them at any time in Azure Pipelines. If you fancy a further challenge feel free to have a go at some of the freeform hack suggestions in the next section.  
    
 <img src="images/Lab7_16.png" width="624"/>
 

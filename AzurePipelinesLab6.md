@@ -48,27 +48,27 @@ The registryName value needs to be globally unique so think of something unique 
 <img src="images/Lab6_9.png" width="624"/>
 
 10. We need to configure the tasks in the pipeline as they wont work as required with all the defaults so lets go through the changes we need on the tasks. First click the "Azure Resource Group Deployment" task you added at the start. This task will be used to Create our Azure Container Registry which we will use as a private and secure storage location for our docker container. With this selected you can change the desired fields which are:
-    * Display name - "Create Container Registry in AzurePipelinesLabGroup"
-    * Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
-    * Resource Group - Use our variable "\$(resourceGroup)"
-    * Location - "North Europe". Whilst previously I used UK South we will later need a service "Azure Web App for Containers" which isn't at the time of writing available in this region so we'll use "North Europe"
-    * Template - Use the "..." to find the file "ContainerRegistry.json" which should be in our "SimpleDotNetCoreApp.ARM" directory.
-    * Template parameters - Use the "..." to find the file "ContainerRegistry.parameters.json" which again will be in our "SimpleDotNetCoreApp.ARM" directory.
-    * Override parameters - Use the "..." elispses to bring up the parameter override dialog and enter "\$(registryName)" as the value for the Registry Name.
+* Display name - "Create Container Registry in AzurePipelinesLabGroup"
+* Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
+* Resource Group - Use our variable "\$(resourceGroup)"
+* Location - "North Europe". Whilst previously I used UK South we will later need a service "Azure Web App for Containers" which isn't at the time of writing available in this region so we'll use "North Europe"
+* Template - Use the "..." to find the file "ContainerRegistry.json" which should be in our "SimpleDotNetCoreApp.ARM" directory.
+* Template parameters - Use the "..." to find the file "ContainerRegistry.parameters.json" which again will be in our "SimpleDotNetCoreApp.ARM" directory.
+* Override parameters - Use the "..." elispses to bring up the parameter override dialog and enter "\$(registryName)" as the value for the Registry Name.
     
 <img src="images/Lab6_10.png" width="624"/>
 
 11. Lets click on the "Build an image" task an make changes here to ensure that our dockerfile is built into a container. You can change the desired fields with these settings:
-    * Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
-    * Azure Container Registry - "\$(registryName).azurecr.io" can be added here as it can use our registry name variable to make up the registry url.
-    * Image Name - "\$(imageName):\$(Build.BuildId)" can be user here to use our image name variable along with our build id to identify this build of our image in the registry.
+* Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
+* Azure Container Registry - "\$(registryName).azurecr.io" can be added here as it can use our registry name variable to make up the registry url.
+* Image Name - "\$(imageName):\$(Build.BuildId)" can be user here to use our image name variable along with our build id to identify this build of our image in the registry.
     
 <img src="images/Lab6_11.png" width="624"/>
 
 12. Moving onto the "Push an image" task by a quick click means we can push our newly built container into the Azure Container Registry. You can change these same familiar fields from the last task to make this happen:
-    * Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
-    * Azure Container Registry - "\$(registryName).azurecr.io" can be added here as it can use our registry name variable to make up the registry url.
-    * Image Name - "\$(imageName):\$(Build.BuildId)" can be user here to use our image name variable along with our build id to identify this build of our image in the registry.
+* Azure Subscription - Select the Azure Subscription you wish to deploy to, assuming this is the same you've used before you will not need to Authorize again.
+* Azure Container Registry - "\$(registryName).azurecr.io" can be added here as it can use our registry name variable to make up the registry url.
+* Image Name - "\$(imageName):\$(Build.BuildId)" can be user here to use our image name variable along with our build id to identify this build of our image in the registry.
    
 <img src="images/Lab6_12.png" width="624"/>
 
