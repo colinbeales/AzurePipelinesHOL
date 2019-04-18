@@ -55,7 +55,7 @@ In this lab we will pick up from here to create a release pipeline to fulfil thi
  
 <img src="images/Lab3_11.png" width="624"/>
 
-    Scrolling down we have some further settings on this task we need to set, each one by selecting the elipses "..."
+    Scrolling down we have some further settings on this task we need to set, each one by selecting the ellipsis "..."
 
 <img src="images/Lab3_12.png" width="624"/>
 
