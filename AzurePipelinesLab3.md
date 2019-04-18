@@ -1,6 +1,6 @@
 # Lab 3: Creating a release pipeline
 
-Our previous lab had us create a deployemnt package and copy some infrastrucure-as-code templates into a drop artifact that we need to use to create an environment with and then deploy our package to.
+Our previous lab had us create a deployment package and copy some infrastrucure-as-code templates into a drop artifact for use in this release lab. 
 
 In this lab we will pick up from here to create a release pipeline to fulfil this job. We will use the pipeline to first create a "Dev" environment in Azure using an ARM template (a json document that describes resources to create in Azure). Our environment for this lab will be simple, just one PaaS Azure App Service that will host our web application. Once our environment is created in Azure we will deploy our package to it so that our web application will run.
 
