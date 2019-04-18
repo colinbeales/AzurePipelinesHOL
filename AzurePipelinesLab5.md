@@ -1,5 +1,5 @@
 # Lab 5: Add approvals to the pipeline
-When we deployed our release pipeline from the last lab it deployed to each environment (Dev, QA and Production) one by one without any pausing. It is common to want some kind of sign-off in-between stages where validation can be done and signe-off against before deployment progresses to the following stage. In this lab we will put in such a sign-off.
+When we deployed our release pipeline from the last lab it deployed to each environment (Dev, QA and Production) one by one without a pause. It is common to want some kind of sign-off in-between stages where validation can be done and signe-off against before deployment progresses to the following stage. In this lab we will put in such a sign-off.
 
 ## Task 1: Adding our approvals
 
