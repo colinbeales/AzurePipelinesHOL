@@ -8,7 +8,7 @@ Our release so far has only one stage, representing a deployment to one environm
 
 <img src="images/Lab4_1.png" width="624"/>
 
-2. On the graphical editor canvas hover the mouse just under the Dev stage and two buttons below will appear. One adds a new stage to the pipeline the other however will clone the one we are on, which in this lab is what we want to do in order to get a replica stage in QA as in Dev. So click "Clone"
+2. On the graphical editor canvas hover the mouse just under the Dev stage and two buttons below will appear. One adds a new stage to the pipeline the other however will clone this one, which in this lab is what we want to do in order to get a replica stage in QA as in Dev. So click "Clone"
    
 <img src="images/Lab4_2.png" width="624"/>
 
@@ -16,7 +16,7 @@ Our release so far has only one stage, representing a deployment to one environm
 
 <img src="images/Lab4_3.png" width="624"/>
 
-4. In the settings page rename the Stage name field from "Copy of Dev" to "QA" and then click the "X" in the top right corner to exit the settings page.
+4. In the settings panel rename the Stage name field from "Copy of Dev" to "QA" and then click the "X" in the top right corner to exit the settings panel.
    
 <img src="images/Lab4_4.png" width="624"/>
 
@@ -24,15 +24,15 @@ Our release so far has only one stage, representing a deployment to one environm
 
 <img src="images/Lab4_5.png" width="624"/>
 
-6. Again we need to rename so click "Copy of QA" to bring up the stage settings page.
+6. Again we need to rename so click "Copy of QA" to bring up the stage settings panel.
    
 <img src="images/Lab4_6.png" width="624"/>
 
-7. Rename the Stage name from "Copy of QA" to "Production" and exit the settings page.
+7. Rename the Stage name from "Copy of QA" to "Production" and exit the settings panel.
 
 <img src="images/Lab4_7.png" width="624"/>
 
-8. We now have three seperate stages, but remember the variable we set in the previous lab. It was set to create and deploy to a WebAppName with a very Dev specific unique title. We need differing names for QA and Production now so click the "Variables" tab so that we can set these.
+8. We now have three seperate stages, but remember the variable we set in the previous lab, it was set to create and deploy to a WebAppName with a very Dev specific unique title. We need differing names for QA and Production now so click the "Variables" tab so that we can set these.
    
 <img src="images/Lab4_8.png" width="624"/>
 
@@ -53,7 +53,7 @@ Our release so far has only one stage, representing a deployment to one environm
    
 <img src="images/Lab4_12.png" width="624"/>
 
-3. To watch our release again we can click the link that appears in the banner towards the top of our page. Click the "Release 2" link to see the progress on executing or pipeline.
+3. To watch our release again we can click the link that appears in the notification banner towards the top of our page. Click the "Release 2" link to see the progress on executing our pipeline.
    
 <img src="images/Lab4_13.png" width="624"/>
 
