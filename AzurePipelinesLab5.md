@@ -7,11 +7,11 @@ When we deployed our release pipeline from the last lab it deployed to each envi
 
 <img src="images/Lab5_1.png" width="624"/>
 
-2. On the visual canvas of our pipelines there are icons on each stage to the left and right hand side. These icons allow us to setup pre (left) and post (right) conditions which approvals are part of. We'll setup on of each for our pipeline so lets start with a post deployment condition by clicking the icon on the right side of the Dev. Post deployment condition means Dev will deploy and then we will be required to sign-off the pipeline moves to the next QA stage. Click the icon now.
+2. On the visual canvas of our pipelines there are icons on each stage to the left and right hand side. These icons allow us to setup pre (left) and post (right) conditions which approvals are part of. We'll setup both a pre and a post condition for our pipeline so lets start with a post deployment condition by clicking the icon on the right side of the Dev. Post deployment condition means Dev will deploy and then we will be required to sign-off before the pipeline moves to the next QA stage. Click the icon now.
    
 <img src="images/Lab5_2.png" width="624"/>
 
-3. In the post deployment conditions screen firstly "Enable" post deployment approvals. You will then be asked for a user or a group (or both) to sign-off this approval. In this instance we'll say anyone in our team. The easiest way to do this is to look at our project name (in green on the below image) and start typing this into the approvers field and selecting the team from the dropdown. Once this is done you can close the post deployment conditions dialog.
+3. In the post deployment conditions panel firstly "Enable" post deployment approvals. You will then be asked for a user or a group (or both) to sign-off this approval. In this instance we'll say anyone in our team. The easiest way to do this is to look at our project name (in green on the below image) and start typing this into the approvers field and selecting the team from the dropdown. Once this is done you can close the post deployment conditions panel.
 
 <img src="images/Lab5_3.png" width="624"/>
 
@@ -19,18 +19,18 @@ When we deployed our release pipeline from the last lab it deployed to each envi
    
 <img src="images/Lab5_4.png" width="624"/>
 
-5. There are a few more options on this pre-deployment conditions screen surrounding elements like Triggers, however we need to scroll down and enable "Pre-deployment approvals". This time rather than adding a group as the approver add your name denoting that you and only you can sign-off going into production for this lab scenario. With these set you can exit the pre-deployment conditions dialog.
+5. There are a few more options on this pre-deployment conditions panel surrounding elements like triggers, however we need to scroll down and enable "Pre-deployment approvals". This time rather than adding a group as the approver add your name denoting that you and only you can sign-off going into production for this lab scenario. With these set you can exit the pre-deployment conditions panel.
    
 <img src="images/Lab5_5.png" width="624"/>
 
 
 ## Task 2: Turn on continuous deployment.
 
-1. At this point we could trigger a deployment like we've done previously, however to change the scenario at little we are going to enable continuous deployment. This will mean that every new successfull build will trigger our release automatically and be subject to these new approvals we have just created. To do this select the small lightening bolt icon in the top right hand corner of our build artifact.
+1. At this point we could trigger a deployment like we've done previously, however to change the scenario at little we are going to enable continuous deployment. This will mean that every new successfull build will trigger our release automatically and be subject to the new approvals we have just created. To do this select the small lightening bolt icon in the top right hand corner of our build artifact.
    
 <img src="images/Lab5_6.png" width="624"/>
 
-2. The continuous deployment trigger on the shown dialog just needs to be set to "Enabled" and then we can exit out of the dialog.
+2. The continuous deployment trigger on the shown panel just needs to be set to "Enabled" and then we can exit out of the panel.
 
 <img src="images/Lab5_7.png" width="624"/>
 
@@ -56,26 +56,26 @@ When we deployed our release pipeline from the last lab it deployed to each envi
    
 <img src="images/Lab5_12.png" width="624"/>
 
-4. The commit dialog need no change of comment or branch so just click "Commit" and a new change will be persisted to the Repo, which in turn will trigger a CI build and a new release triggered by continuous deployment.
+4. The commit dialog needs no changes so just click "Commit" and a new change will be persisted to the repo, which in turn will trigger a CI build and a new release triggered by continuous deployment.
 <img src="images/Lab5_13.png" width="624"/>
 
 5. Lets check our build is executing by heading back to the builds area of pipelines using the menus of the left and selecting the sub-menu option of "Builds".
    
 <img src="images/Lab5_14.png" width="424"/>
 
-6. The builds screen should show our build and the new build either executing or completed. The image below in green shows the area to check which has a blue icon if the build is executing and a green tick once the build is complete. Wait until this has a green tick and then we'll know our build was succesful and our continuous deloy release will have triggered.
+6. The builds screen should show our build and the new build either executing or completed. The image below in green shows the area to check which has a blue icon if the build is executing and a green tick once the build is complete. Wait until this has a green tick and then we'll know our build was succesful and our continuous deploy release will have been triggered.
    
 <img src="images/Lab5_15.png" width="624"/>
 
 7. To check on our continuous deployment release lets head to the "Releases" area from the menu and sub-menu on the left hand side (the small rocket).
    
-<img src="images/Lab5_16.png" width="50"/>
+<img src="images/Lab5_16.png" width="40"/>
 
 8. The releases screen should show the progress of the deployment out to the Dev stage of our pipeline. Once Dev has deployed our post-deployment approval will be required before anything progresses further. You will see a blue clock icon when an approval is required. It's worth noting that a notification email would be sent at this point, but we can respond directly from this screen by clicking the "Dev" stage with the blue clock icon.
    
 <img src="images/Lab5_17.png" width="624"/>
 
-9. (Optional step) Before we sign-off our release it may make sense to actually check that we have successful deployment of the modified code. Create a new borwser tab and head to the "https://uniquewebappnamedev.azurewebsites.net" url. Remember "uniquewebappnamedev" will be different for your instance to the value you input to the variable for WebAppName in the release pipeline for the Dev stage. You should see something like the below image with the area in green showing the "Modified" change.
+9. (Optional step) Before we sign-off our release it may make sense to actually check that we have successful deployment of the modified code. Create a new browser tab and head to the "https://uniquewebappnamedev.azurewebsites.net" url. Remember "uniquewebappnamedev" will be different for your instance to the value you input to the variable for WebAppName in the release pipeline for the Dev stage. You should see something like the below image with the area in green showing the "Modified" change.
     
 <img src="images/Lab5_18.png" width="624"/>
 
@@ -83,11 +83,11 @@ When we deployed our release pipeline from the last lab it deployed to each envi
     
 <img src="images/Lab5_19.png" width="624"/>
 
-11. The post-deployment approval screen allows us to make a comment that would be available at a later date for auditing reasons. We don't need to fill this out today so just click "Approve".
+11. The post-deployment approval panel allows us to make a comment that would be available at a later date for auditing reasons. We don't need to fill this out today so just click "Approve".
     
 <img src="images/Lab5_20.png" width="624"/>
 
-12. Our approval is now done, so lets exit from the post-deployment approvals dialog.
+12. Our approval is now done, so lets exit from the post-deployment approvals panel.
     
 <img src="images/Lab5_21.png" width="624"/>
 
@@ -107,7 +107,7 @@ When we deployed our release pipeline from the last lab it deployed to each envi
     
 <img src="images/Lab5_25.png" width="624"/>
 
-17. Again close the approvals dialog bu selecting the "X" button.
+17. Again close the approvals panel by selecting the "X" button.
     
 <img src="images/Lab5_26.png" width="624"/>
 
