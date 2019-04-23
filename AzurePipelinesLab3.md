@@ -22,7 +22,7 @@ In this lab we will pick up from here to create a release pipeline to fulfil thi
    
 <img src="images/Lab3_4.png" width="624"/>
 
-5. Artifacts could come from a range of different places, version control, builds and container registries to name a few. In our instance we want our release to come from an artifact created in our build from Lab 2 so make sure "Build" is selected and then in the "Source (Build pipeline)" select the CI build we created in the previous lab. The oprions should expand at this point but you can leave all the defaults as we are happy to use the latest build when we trigger releases by default. Select "Add" and we're done with adding the artifact.
+5. Artifacts could come from a range of different places, version control, builds and container registries to name a few. In our instance we want our release to come from an artifact created in our build from Lab 2 so make sure "Build" is selected and then in the "Source (Build pipeline)" select the CI build we created in the previous lab. The options should expand at this point but you can leave all the defaults as we are happy to use the latest build when we trigger releases by default. Select "Add" and we're done with adding the artifact.
  
 <img src="images/Lab3_5.png" width="624"/>
 
@@ -34,7 +34,7 @@ In this lab we will pick up from here to create a release pipeline to fulfil thi
    
 <img src="images/Lab3_7.png" width="624"/>
 
-1. Having authorized our pipeline to use our Azure subscription we need to provide an "App service name" for the Azure App Service we wish to deploy to. We could hard code this value, but I prefer to use variables as they have more flexibility to set for an entire release (all stages e.g. dev, QA and prod) or have a stage specific value. The format for variables will be familiar to PowerShell users, therefore for a variable called WebAppName we use the \"$(WebAppName)" without the quotes. Once this is set, select the "Variables" tab where we can set a value for it.
+8. Having authorized our pipeline to use our Azure subscription we need to provide an "App service name" for the Azure App Service we wish to deploy to. We could hard code this value, but I prefer to use variables as they have more flexibility to set for an entire release (all stages e.g. dev, QA and prod) or have a stage specific value. The format for variables will be familiar to PowerShell users, therefore for a variable called WebAppName we use the \"$(WebAppName)" without the quotes. Once this is set, select the "Variables" tab where we can set a value for it.
  
 <img src="images/Lab3_8.png" width="624"/>
 
@@ -55,24 +55,24 @@ In this lab we will pick up from here to create a release pipeline to fulfil thi
  
 <img src="images/Lab3_11.png" width="624"/>
 
-    Scrolling down we have some further settings on this task we need to set, each one by selecting the ellipsis "..."
+Scrolling down we have some further settings on this task we need to set, each one by selecting the ellipsis "..."
 
 <img src="images/Lab3_12.png" width="624"/>
 
-    The template and the template parameters fields can be set by following the dialog to find the ARM json files that describe the resources that we want to create in Azure. You can select "WebSite.json" for the template field and "WebSite.Parameters.json" for the template parameters field.  
+The template and the template parameters fields can be set by following the dialog to find the ARM json files that describe the resources that we want to create in Azure. You can select "WebSite.json" for the template field and "WebSite.Parameters.json" for the template parameters field.  
 
 <img src="images/Lab3_13.png" width="424"/>
 
-    The override parameters field can be used to override parameters that will be used in the ARM template. 
-    This is a chance for us to provide a WebAppName for the App Service that we are going to create. Change the null variable here to the "$(WebAppName)" variable we created earlier. This will mean this task will create the same App Service resource that we deploy to in the next pipeline task.
+The override parameters field can be used to override parameters that will be used in the ARM template. 
+This is a chance for us to provide a WebAppName for the App Service that we are going to create. Change the null variable here to the "$(WebAppName)" variable we created earlier. This will mean this task will create the same App Service resource that we deploy to in the next pipeline task.
 
 <img src="images/Lab3_14.png" width="424"/>
 
-1.  Before we save our release pipeline lets select the name "New release pipeline" at the top of the screen and give a new more meaningful name like "Pipelines Lab AppService Release". We can now click "Save" to save our release pipeline.
+12.  Before we save our release pipeline lets select the name "New release pipeline" at the top of the screen and give a new more meaningful name like "Pipelines Lab AppService Release". We can now click "Save" to save our release pipeline.
 
 <img src="images/Lab3_15.png" width="624"/>
 
-The Save dialog can have a comment for history, but we'll just sekect "OK" so the save is complete.
+The Save dialog can have a comment for history, but we'll just select "OK" so the save is complete.
 
 <img src="images/Lab3_16.png" width="424"/>
 
