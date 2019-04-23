@@ -15,7 +15,7 @@ Azure has many choices to host an container such as AKS (a managed Kubernetes se
    
 <img src="images/Lab7_2.png" width="624"/>
 
-1. Whilst this lab we won't be creating clones of our stages to represent environments we'll name this stage to "Dev" to give it a little more context if ever we choose to clone from it at a future point. Once we've renamed we can close the panel with the "X" in the top right hand corner.
+3. Whilst this lab we won't be creating clones of our stages to represent environments we'll name this stage to "Dev" to give it a little more context if ever we choose to clone from it at a future point. Once we've renamed we can close the panel with the "X" in the top right hand corner.
 
 <img src="images/Lab7_3.png" width="624"/>
 
@@ -73,7 +73,7 @@ Write-Output ("##vso[task.setvariable variable=registryKey;]$password")
 
 <img src="images/Lab7_9.png" width="624"/>
 
-10. The can now click on the final task "Deploy Azure App Service" which is mostly already completed based on the fact we configured "Web App for Containers" at the stage level. However we do need to scroll down and expand the "Application and Configuration Settings" section. In the "App Settings" bring up name value editor with the ellipsis "..." and enter the follow name/value pairs to configure Web App for Containers to have access to our Azure Container Registry. 
+10. We can now click on the final task "Deploy Azure App Service" which is mostly already completed based on the fact we configured "Web App for Containers" at the stage level. However we do need to scroll down and expand the "Application and Configuration Settings" section. In the "App Settings" bring up name value editor with the ellipsis "..." and enter the following name/value pairs to configure Web App for Containers to have access to our Azure Container Registry. 
 
 |Name|Value|
 |----|-----|

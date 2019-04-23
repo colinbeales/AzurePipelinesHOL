@@ -26,7 +26,7 @@ When we deployed our release pipeline from the last lab it deployed to each envi
 
 ## Task 2: Turn on continuous deployment.
 
-1. At this point we could trigger a deployment like we've done previously, however to change the scenario at little we are going to enable continuous deployment. This will mean that every new successfull build will trigger our release automatically and be subject to the new approvals we have just created. To do this select the small lightening bolt icon in the top right hand corner of our build artifact.
+1. At this point we could trigger a deployment like we've done previously, however to change the scenario a little we are going to enable continuous deployment. This will mean that every new successfull build will trigger our release automatically and be subject to the new approvals we have just created. To do this select the small lightening bolt icon in the top right hand corner of our build artifact.
    
 <img src="images/Lab5_6.png" width="624"/>
 
@@ -63,7 +63,7 @@ When we deployed our release pipeline from the last lab it deployed to each envi
    
 <img src="images/Lab5_14.png" width="424"/>
 
-6. The builds screen should show our build and the new build either executing or completed. The image below in green shows the area to check which has a blue icon if the build is executing and a green tick once the build is complete. Wait until this has a green tick and then we'll know our build was succesful and our continuous deploy release will have been triggered.
+6. The builds screen should show our build and the new build either executing or completed. The image below in green shows the area to check which has a blue icon if the build is executing and a green tick once the build is complete. Wait until this has a green tick and then we'll know our build was successful and our continuous deploy release will have been triggered.
    
 <img src="images/Lab5_15.png" width="624"/>
 
@@ -95,7 +95,7 @@ When we deployed our release pipeline from the last lab it deployed to each envi
     
 <img src="images/Lab5_22.png" width="624"/>
 
-14. If you got to this point whilst the deployment is still occuring the QA stage will be "In progress" keep refreshing this screen until QA shows as "Suceeded". The "Refresh" button can be found in the toolbar above the visual canvas.
+14. If you got to this point whilst the deployment is still occuring the QA stage will be "In progress" keep refreshing this screen until QA shows as "Succeeded". The "Refresh" button can be found in the toolbar above the visual canvas.
     
 <img src="images/Lab5_23.png" width="624"/>
 
