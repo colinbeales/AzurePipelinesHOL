@@ -94,7 +94,7 @@ The Save dialog can have a comment for history, but we'll just select "OK" so th
         
 <img src="images/Lab3_20.png" width="624"/>
 
-5.  Depending on how quickly you clicked through you will either see the steps executing or see all the steps completed meaning our deployment has been successful creating a App Service in a "Dev" environement and deploying our build to this service.
+5.  Depending on how quickly you clicked through you will either see the steps executing or see all the steps completed meaning our deployment has been successful creating a App Service in a "Dev" environment and deploying our build to this service.
     
 <img src="images/Lab3_21.png" width="624"/>
 
