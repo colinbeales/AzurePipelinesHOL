@@ -63,7 +63,7 @@ When we deployed our release pipeline from the last lab it deployed to each envi
    
 <img src="images/Lab5_14.png" width="424"/>
 
-6. The builds screen should show our build and the new build either executing or completed. The image below in green shows the area to check which has a blue icon if the build is executing and a green tick once the build is complete. Wait until this has a green tick and then we'll know our build was successful and our continuous deploy release will have been triggered.
+6. The builds screen should show our build and the new build either executing or completed. The image below in green shows the area to check which has a blue icon if the build is executing and a green tick once the build is complete. Wait until this has a green tick and then we'll know our build was successful and our continuous deploy release will have been triggered. Note: A lab participant informed us they had to refresh the page to get the latest UI, feel free to refresh the page to ensure you have the latest status.
    
 <img src="images/Lab5_15.png" width="624"/>
 
